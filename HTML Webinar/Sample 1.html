@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Title</title>
+	<style>
+		*{
+			font-family: Arial;
+			font-size: 18pt;
+		}
+	</style>
+</head>
+<body>
+	<input id="name"><button id="btn">Greet</button>
+	<br>
+	Hello World
+	<script>
+		let nameBox = document.getElementById('name')
+		let greetBtn = document.getElementById('btn')
+		greetBtn.onclick = function() {
+			let name = nameBox.value
+			window.alert("Hello" + name)
+		}
+	</script>
+</body>
+</html>

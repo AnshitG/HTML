@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Sample Code 2</title>
+	<style>
+		*{
+			font-family: all;
+			font-size: 19pt;
+		}
+	</style>
+</head>
+
+<body>
+<input id="todo"><button id="btn">Add Item</button><button id="del">Delete Item</button>
+<br>
+<ul id="list">
+	<li>Empty List - Add items</li>
+</ul>
+<script>
+	let todoBox = document.getElementById("todo")
+	let addBtn = document.getElementById("btn")
+	let todoList = document.getElementById("list")
+
+	addBtn.onclick = function() {
+		let todo = todoBox.value
+		let newTaskListItem = 
+			document.createElement('li')
+		newTaskListItem.innerText = todo
+		todoList.appendChild(newTaskListItem)
+
+		// OR WE CAN (BUT NOT PREFFERED) (Although we have to do this always in case of the content that is not under any tag having id)
+
+		//todoList.innerHTML += 
+		//	'<li>' + todo + '</li>'
+	}
+</script>
+</body>
+</html>
