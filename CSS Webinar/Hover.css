@@ -1,0 +1,19 @@
+li:hover{
+    color: green
+}
+
+li li:hover{
+    color:blue
+}
+
+li li li:hover{
+    color: red;
+}
+
+ul ul{
+    display: none;
+}
+
+li:hover > ul{
+    display: block;
+}

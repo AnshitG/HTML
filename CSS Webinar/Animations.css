@@ -1,0 +1,42 @@
+div{
+    margin: 50px;
+    height:80px;
+    width: 80px;
+    background-color: cornflowerblue;
+}
+
+@keyframes slide{
+    from{
+        margin-left:40px;
+    }
+    to{
+        margin-left:300px;
+    }
+}
+
+div:hover+div{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes crazyslide{
+    0%{
+        margin_left:40px;
+    }
+    50%{
+        height:200px;
+        background-color: crimson;
+        margin-left: 170px;
+    }
+    100%{
+        margin-left: 300px;
+        background-color: cornflowerblue;
+    }
+}
+
+#div3:hover + div{
+    animation-name: crazyslide;
+    animation-iteration-count: 3;
+    animation-duration: 2s;
+}

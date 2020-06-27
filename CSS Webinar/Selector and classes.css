@@ -1,0 +1,32 @@
+/* '*' is global selector. whatever we write under this style is applied to all the elements in the body*/
+*{
+    font-family: fantasy;
+}
+
+/*We also have the tag selector. the tag name we specify are all affected by this style*/
+p{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: xx-large;
+}
+
+/* We can also select the elements using their id's. for this we have to use '#' before the id */
+#p1{
+    margin-left: 100px;
+}
+
+#p3{
+    margin-left: 200px;
+}
+
+/* Now comes the classes
+we can add class selectors also using '.' before the name of the class*/
+.osmpara{
+    background-color: blueviolet;
+}
+
+.bigpara{
+    color: crimson;
+}
